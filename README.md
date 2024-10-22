@@ -8,7 +8,7 @@ Use the **Use this template** button to create a new version of this repository 
 
 _New to Git and GitHub? This free online course will get you up to speed quickly: [Getting Started with Git and GitHub](https://www.coursera.org/learn/getting-started-with-git-and-github)_.
 
-# Replace this heading with your team/submission name
+# WatXZBots - ShikshaMate
 
 - [Project summary](#project-summary)
   - [The issue we are hoping to solve](#the-issue-we-are-hoping-to-solve)
@@ -37,15 +37,20 @@ _INSTRUCTIONS: Below are the suggested sections to include in your README file t
 
 ### The issue we are hoping to solve
 
-REPLACE THIS SENTENCE with a short description, 2-3 sentences in length, of the specific sustainability problem your solution is meant to address.
+Primary and secondary school completion rates are rising, leading to lot of pressure in availability of teachers and personal assistance. Low and middle income countries facing financial gap - even in developing countries, the access to quality education is expensive and not affordable to all sections of society. Providing rich resources to all students will help in decreasing the illiteracy rates and ultimately lead to betterment of our society
 
 ### How our technology solution can help
 
-REPLACE THIS SENTENCE with a short description of your team's solution, in about 10 words.
+Personal assistant using watsonx.ai to achieve equitable access to quality education and opportunities
 
 ### Our idea
 
-INSTRUCTIONS: Replace this paragraph with a longer description of your solution. In about 500 words, describe your solution in more detail. Include the real-world problem you identified, describe the technological solution you have created, and explain how it’s an improvement over existing solutions. You can supply additional documentation in this source code repository that you link to as well.
+Our solution focusses on addressing one of UN's sustainable development goal: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all". This aims at creating a personal teacher/guide which can provide information on specific topics asked by the user. This will help student to focus on the topic by referring to reliable information sources available in the database. As a next step student can test their knowledge by taking practice exams which are provided by our solution. This will also help teachers to save time needed to set up these quizzes, providing them opportunities to focus on other important tasks. Along with this the model also evaluates the performance of the student and provides prompt feedback on topics which require improvement. It also highlights the strengths and weaknesses via a progress report. this will also provide a personalized plan based on their caliber. It also guides on what should be the action plan for further improvements. Our application is a chat interface deployed using Watsonx chat assistant and watsonx.ai which would allow students to interact and get prompt responses to their queries. It uses watsonx.data for collecting,storing the subject related documents which will be further referred for Quiz generation as well as concept clarification. Watsonx.data stores topic wise documents as well as sample questions for different grades. The foundation model used in watsonx.ai is llama3_1_70B-instruct. After analyzing through various foundation models, we opted for lama3_1_70B-instruct as this model powers complex conversations with superior contextual understanding, reasoning and text generation 
+
+Whats Next? Career guide Assist 
+- Tool to provide student with the list of universities based on the scroring pattern in practice tests.
+- Tool to provide information of what it takes to get into university of choice.
+- Tool to provide feature for student to navigate through the different options available and also highlight the chances of getting through based on university statistics and student performance.
 
 More detail is available in our [description document](./docs/DESCRIPTION.md).
 
@@ -59,7 +64,7 @@ _INSTRUCTIONS: Included here is a list of IBM watsonx products. Remove any produ
 
 - [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
 
-- [watsonx.governance](https://www.ibm.com/products/watsonx-governance) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
+- [watsonx.data](https://www.ibm.com/products/watsonx-data) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
 
 - [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
 
@@ -69,17 +74,7 @@ INSTRUCTIONS: List any other IBM technology or IBM AI services used in your solu
 
 **Additional IBM AI services (Remove any that you did not use)**
 
-- [Watson Machine Learning](https://cloud.ibm.com/catalog/services/watson-machine-learning) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
 - [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- [Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- [Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- [Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-
-- [Language Translator](https://cloud.ibm.com/catalog/services/language-translator) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
 
 ### Solution architecture
 
