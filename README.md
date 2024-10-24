@@ -109,7 +109,7 @@ In the future we plan to...
 
 See below for our proposed schedule on next steps after Call for Code 2024 submission.
 
-![Roadmap](./images/ShikshaMate development roadmap.pdf)
+![Roadmap](./images/ShikshaMateDevelopmentRoadmap.pdf)
 
 ## Additional details
 
