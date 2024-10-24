@@ -27,7 +27,7 @@ _New to Git and GitHub? This free online course will get you up to speed quickly
 - [About this template](#about-this-template)
   - [Contributing](#contributing)
   - [Versioning](#versioning)
-  - [Authors](#authors)
+  - [Team members](#Team members)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
