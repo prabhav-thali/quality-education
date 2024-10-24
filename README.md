@@ -82,7 +82,7 @@ REPLACE THIS EXAMPLE WITH YOUR OWN, OR REMOVE THIS EXAMPLE
 
 Diagram and step-by-step description of the flow of our solution:
 
-![Video transcription/translaftion app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![Video transcription/translaftion app](./images/ShikshaMate_architecture_diagram.png)
 
 1. The user navigates to the site and uploads a video file.
 2. Watson Speech to Text processes the audio and extracts the text.
@@ -109,7 +109,7 @@ In the future we plan to...
 
 See below for our proposed schedule on next steps after Call for Code 2024 submission.
 
-![Roadmap](./images/ShikshaMateDevelopmentRoadmap.pdf)
+![Roadmap](./images/ShikshaMate_Roadmap.png)
 
 ## Additional details
 
