@@ -76,7 +76,7 @@ INSTRUCTIONS: List any other IBM technology or IBM AI services used in your solu
 
 **Additional IBM AI services (Remove any that you did not use)**
 
-- [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - Explored the cloud pack for data and watsonx products through Studio.
+- [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - Explored the cloud pak for data and watsonx products through Studio.
 - IBM developed models such as granite.13b.instruct.v2 and embedding model IBM_SLATE_30M_ENG.
 
 ### Solution architecture
