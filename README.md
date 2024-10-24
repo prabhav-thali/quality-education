@@ -82,16 +82,13 @@ INSTRUCTIONS: List any other IBM technology or IBM AI services used in your solu
 
 ### Solution architecture
 
-REPLACE THIS EXAMPLE WITH YOUR OWN, OR REMOVE THIS EXAMPLE
-
 Diagram and step-by-step description of the flow of our solution:
 
 ![Video transcription/translaftion app](./images/ShikshaMate_architecture_diagram.png)
 
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+1. The user navigates to the site and logs in.
+2. He then runs a query on a specific topic.
+3. Watsonx Assistant frames the most relevant response to user's query based on reference documents stored.
 
 ## Presentation materials
 
@@ -105,9 +102,9 @@ _INSTRUCTIONS: The following deliverables should be officially posted to your My
 
 The project currently does the following things.
 
-- Feature 1
-- Feature 2
-- Feature 3
+- The users query is correctly answered based on refernce documents stored.
+- Sample questions presented on a topic as per users request for practise and also answers are validated by GenAI.
+- UI for user login and a [!RAG pipeline](./SourceCode/RAG_implementation) to validate the output and create a setup is also ready.
 
 In the future we plan to...
 
@@ -123,16 +120,6 @@ _INSTRUCTIONS: The following deliverables are suggested, but **optional**. Addit
 
 INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
 
-### Live demo
-
-You can find a running system to test at...
-
-See our [description document](./docs/DESCRIPTION.md) for log in credentials.
-
----
-
-_INSTRUCTIONS: You can remove the below section from your specific project README._
-
 ## About this template
 
 ### Contributing
@@ -143,8 +130,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
-### Authors
-![authors](./images/authors.jpeg)
+### Team members
+![team](./images/authors.jpeg)
 - Namrata Bhave
 - Prabhav Thali
 - Vibhuti Sawant
