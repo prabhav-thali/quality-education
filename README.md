@@ -144,6 +144,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 <a href="https://github.com/Call-for-Code/Project-Sample/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=Call-for-Code/Project-Sample" />
 </a>
+![authors](./images/authors.jpeg)
 
 - **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
 
