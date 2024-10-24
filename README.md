@@ -27,7 +27,6 @@ _New to Git and GitHub? This free online course will get you up to speed quickly
 - [About this template](#about-this-template)
   - [Contributing](#contributing)
   - [Versioning](#versioning)
-  - [Authors](#authors)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
@@ -45,14 +44,17 @@ Personal assistant using watsonx.ai to achieve equitable access to quality educa
 
 ### Our idea
 
-Our solution focusses on addressing one of UN's sustainable development goal: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all". This aims at creating a personal teacher/guide which can provide information on specific topics asked by the user. This will help student to focus on the topic by referring to reliable information sources available in the database. As a next step student can test their knowledge by taking practice exams which are provided by our solution. This will also help teachers to save time needed to set up these quizzes, providing them opportunities to focus on other important tasks. Along with this the model also evaluates the performance of the student and provides prompt feedback on topics which require improvement. It also highlights the strengths and weaknesses via a progress report. this will also provide a personalized plan based on their caliber. It also guides on what should be the action plan for further improvements. Our application is a chat interface deployed using Watsonx chat assistant and watsonx.ai which would allow students to interact and get prompt responses to their queries. It uses watsonx.data for collecting,storing the subject related documents which will be further referred for Quiz generation as well as concept clarification. Watsonx.data stores topic wise documents as well as sample questions for different grades. The foundation model used in watsonx.ai is llama3_1_70B-instruct. After analyzing through various foundation models, we opted for lama3_1_70B-instruct as this model powers complex conversations with superior contextual understanding, reasoning and text generation 
+Our solution focusses on addressing one of UN's sustainable development goal: "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all".   
+* This aims at creating a personal teacher/guide which can provide information on specific topics asked by the user. This will help student to focus on the topic by referring to reliable information sources available in the database.  
+* As a next step student can test their knowledge by taking practice exams which are provided by our solution. This will also help teachers to save time needed to set up these quizzes, providing them opportunities to focus on other important tasks.  
+* Along with this the model also evaluates the performance of the student and provides prompt feedback on topics which require improvement. It also highlights the strengths and weaknesses via a progress report. This will also provide a personalized plan based on their caliber. It also guides on what should be the action plan for further improvements.   
 
-Whats Next? Career guide Assist 
+Our application is a chat interface deployed using Watsonx chat assistant and watsonx.ai which would allow students to interact and get prompt responses to their queries. It uses watsonx.data for collecting,storing the subject related documents which will be further referred for Quiz generation as well as concept clarification. Watsonx.data stores topic wise documents as well as sample questions for different grades. The foundation model used in watsonx.ai is llama3_1_70B-instruct. After analyzing through various foundation models, we opted for lama3_1_70B-instruct as this model powers complex conversations with superior contextual understanding, reasoning and text generation 
+
+There is a wide scope to implement many things in the education field and we dream to expand this further as a **Career guide Assistant** :
 - Tool to provide student with the list of universities based on the scroring pattern in practice tests.
 - Tool to provide information of what it takes to get into university of choice.
 - Tool to provide feature for student to navigate through the different options available and also highlight the chances of getting through based on university statistics and student performance.
-
-More detail is available in our [description document](./docs/DESCRIPTION.md).
 
 ## Technology implementation
 
@@ -62,11 +64,11 @@ _INSTRUCTIONS: Included here is a list of IBM watsonx products. Remove any produ
 
 **Featured watsonx products**
 
-- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
+- [watsonx.ai](https://www.ibm.com/products/watsonx-ai) - This is our core product, which is used to invoke LLM calls, try grounding with documents etc.
 
-- [watsonx.data](https://www.ibm.com/products/watsonx-data) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
+- [watsonx.data](https://www.ibm.com/products/watsonx-data) - This can be used as DB to store our study material/sample question papers as vector embeddings instead of in memory, couldn't explore more due to limited resources of lite plan.
 
-- [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
+- [watsonx Assistant](https://cloud.ibm.com/catalog/services/watsonx-assistant) - This is part of our final solution where an assistant is integrated as part of our application to chat with end user.
 
 ### Other IBM technology used
 
@@ -74,20 +76,18 @@ INSTRUCTIONS: List any other IBM technology or IBM AI services used in your solu
 
 **Additional IBM AI services (Remove any that you did not use)**
 
-- [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
+- [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) - Explored the cloud pak for data and watsonx products through Studio.
+- IBM developed models such as granite.13b.instruct.v2 and embedding model IBM_SLATE_30M_ENG.
 
 ### Solution architecture
 
-REPLACE THIS EXAMPLE WITH YOUR OWN, OR REMOVE THIS EXAMPLE
-
 Diagram and step-by-step description of the flow of our solution:
 
-![Video transcription/translaftion app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![Video transcription/translaftion app](./images/ShikshaMate_architecture_diagram.png)
 
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+1. The user navigates to the site and logs in.
+2. He then runs a query on a specific topic.
+3. Watsonx Assistant frames the most relevant response to user's query based on reference documents stored.
 
 ## Presentation materials
 
@@ -95,21 +95,21 @@ _INSTRUCTIONS: The following deliverables should be officially posted to your My
 
 ### Solution demo video
 
-[![Watch the video](https://raw.githubusercontent.com/Liquid-Prep/Liquid-Prep/main/images/readme/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
+[![Watch the video](./images/App_screenshot.png)](https://youtu.be/WmlcijwhxiY)
 
 ### Project development roadmap
 
 The project currently does the following things.
 
-- Feature 1
-- Feature 2
-- Feature 3
+- The users query is correctly answered based on refernce documents stored.
+- Sample questions presented on a topic as per users request for practise and also answers are validated by GenAI.
+- UI for user login and a [!RAG pipeline](./SourceCode/RAG_implementation) to validate the output and create a setup is also ready.
 
 In the future we plan to...
 
 See below for our proposed schedule on next steps after Call for Code 2024 submission.
 
-![Roadmap](./images/roadmap.jpg)
+![Roadmap](./images/ShikshaMate_Roadmap.png)
 
 ## Additional details
 
@@ -118,16 +118,6 @@ _INSTRUCTIONS: The following deliverables are suggested, but **optional**. Addit
 ### How to run the project
 
 INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
-
-### Live demo
-
-You can find a running system to test at...
-
-See our [description document](./docs/DESCRIPTION.md) for log in credentials.
-
----
-
-_INSTRUCTIONS: You can remove the below section from your specific project README._
 
 ## About this template
 
@@ -139,13 +129,12 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
-### Authors
-
-<a href="https://github.com/Call-for-Code/Project-Sample/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Call-for-Code/Project-Sample" />
-</a>
-
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
+### Team members
+![team](./images/authors.jpeg)
+- Namrata Bhave
+- Prabhav Thali
+- Vibhuti Sawant
+- Amod Borkar
 
 ### License
 
